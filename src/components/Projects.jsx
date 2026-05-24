@@ -28,7 +28,7 @@ const projects = [
     title: 'Portfolio Website',
     description: 'My personal developer portfolio showcasing projects, skills, animations, and modern UI built using React and Framer Motion.',
     tags: ['React', 'Tailwind CSS', 'Framer Motion'],
-    github: 'https://github.com/yourusername/portfolio',
+    github: 'https://github.com/TanyaPrajapati/Tanya-Portfolio',
     live: 'https://your-portfolio.vercel.app',
     icon: '💼',
     color: '#86efac',
