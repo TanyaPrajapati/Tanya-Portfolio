@@ -52,6 +52,8 @@ const categories = [
       { name: 'GitHub', icon: '🐙', level: 'Intermediate' },
       { name: 'VS Code',icon: '💙', level: 'Advanced'     },
       { name: 'Postman',icon: '📮', level: 'Beginner'     },
+      { name: 'Docker',     icon: '🐋', level: 'Beginner'     },  
+      { name: 'Kubernetes', icon: '☸️', level: 'Beginner'     },
     ],
   },
 ]
