@@ -60,7 +60,7 @@ const ProjectCard = ({ project, index }) => {
         boxShadow: hovered ? `0 0 40px ${project.glow}` : 'none',
       }}
     >
-      {/* Top corner glow */}
+      
       <div
         className='absolute top-0 right-0 w-28 h-28 rounded-full pointer-events-none'
         style={{
@@ -70,7 +70,7 @@ const ProjectCard = ({ project, index }) => {
         }}
       />
 
-      {/* Project number watermark */}
+      
       <span
         className='absolute bottom-4 right-6 font-mono font-bold pointer-events-none select-none'
         style={{ fontSize: '5rem', color: project.color, opacity: 0.04, lineHeight: 1 }}
@@ -78,7 +78,7 @@ const ProjectCard = ({ project, index }) => {
         {String(index + 1).padStart(2, '0')}
       </span>
 
-      {/* Header */}
+      
       <div className='flex items-start justify-between gap-3'>
         <div className='flex items-center gap-3'>
           <div
@@ -99,7 +99,7 @@ const ProjectCard = ({ project, index }) => {
             >
               {project.title}
             </h3>
-            {/* Status badge */}
+            
             <span
               className='text-[9px] px-2 py-0.5 rounded-full border tracking-widest uppercase font-mono inline-flex items-center gap-1'
               style={{ background: sc.bg, borderColor: sc.border, color: sc.text }}
@@ -117,7 +117,7 @@ const ProjectCard = ({ project, index }) => {
           </div>
         </div>
 
-        {/* Links */}
+        
         <div className='flex gap-2 flex-shrink-0'>
           {project.github && (
             <a
@@ -152,18 +152,18 @@ const ProjectCard = ({ project, index }) => {
         </div>
       </div>
 
-      {/* Divider */}
+      
       <div
         className='w-full h-px'
         style={{ background: `linear-gradient(90deg, ${project.color}44, transparent)` }}
       />
 
-      {/* Description */}
+      
       <p className='text-sm text-slate-400 leading-relaxed font-light'>
         {project.description}
       </p>
 
-      {/* Tags */}
+      
       <div className='flex flex-wrap gap-2 mt-auto'>
         {project.tags.map((tag, i) => (
           <span
@@ -180,7 +180,7 @@ const ProjectCard = ({ project, index }) => {
         ))}
       </div>
 
-      {/* Bottom animated bar */}
+      
       <motion.div
         className='absolute bottom-0 left-0 h-[2px] rounded-b-2xl'
         style={{ background: `linear-gradient(90deg, ${project.color}, transparent)` }}
@@ -196,7 +196,7 @@ const Projects = () => {
     <section id='projects' className='min-h-screen bg-[#111118] text-slate-200 py-20 px-6'>
       <div className='max-w-6xl mx-auto'>
 
-        {/* Label + Title */}
+        
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -204,9 +204,7 @@ const Projects = () => {
           transition={{ duration: 0.6 }}
           className='mb-16'
         >
-          <p className='text-xs tracking-[0.2em] uppercase text-blue-300 font-mono mb-2'>
-            // what i have built
-          </p>
+        
           <h2 className='text-4xl md:text-5xl font-semibold'>
             My{' '}
             <span className='bg-gradient-to-r from-blue-300 to-violet-300 bg-clip-text text-transparent'>
@@ -215,14 +213,14 @@ const Projects = () => {
           </h2>
         </motion.div>
 
-        {/* Projects Grid */}
+        
         <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
           {projects.map((project, i) => (
             <ProjectCard key={i} project={project} index={i} />
           ))}
         </div>
 
-        {/* GitHub CTA */}
+        
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -245,7 +243,6 @@ const Projects = () => {
           </a>
         </motion.div>
 
-        {/* Bottom note */}
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

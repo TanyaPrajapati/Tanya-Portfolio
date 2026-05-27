@@ -16,7 +16,7 @@ const Hero = () => {
     >
       <div className='container mx-auto px-6 flex flex-col md:flex-row items-center justify-between'>
 
-        {/* ── LEFT: Text content ── */}
+        
         <div className='md:w-1/2 mb-10 md:mb-0'>
           <motion.h1
             initial={{ opacity: 0, x: -30 }}
@@ -25,7 +25,9 @@ const Hero = () => {
             viewport={{ once: true }}
             className='text-4xl md:text-6xl font-bold mb-4 text-white'
           >
-            Hi, I'm <span className='text-blue-300'>Tanya Prajapati</span>
+            Hi, I'm  <span className='bg-gradient-to-r from-blue-300 to-violet-300 bg-clip-text text-transparent'>
+              Tanya Prajapati.
+            </span>
           </motion.h1>
 
           <motion.h2
@@ -70,11 +72,11 @@ const Hero = () => {
           </motion.div>
         </div>
 
-        {/* ── RIGHT: Animated profile image ── */}
+        
         <div className='md:w-1/2 flex justify-center'>
           <div className='relative flex items-center justify-center w-[260px] h-[260px]'>
 
-            {/* Liquid morphing blob ring */}
+            
             <motion.div
               className='absolute w-[300px] h-[300px]'
               style={{
@@ -96,7 +98,7 @@ const Hero = () => {
               transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
             />
 
-            {/* Dashed orbit rings */}
+            
             <motion.div
               className='absolute w-[290px] h-[290px] rounded-full border border-dashed border-blue-300/25'
               animate={{ rotate: -360 }}
@@ -108,7 +110,7 @@ const Hero = () => {
               transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
             />
            
-            {/* Floating data tags */}
+            
             {[
               { text: "FULL_STACK.exe",   pos: "top-[10px] left-1/2 -translate-x-1/2", delay: 0   },
               { text: "STATUS: AVAILABLE", pos: "bottom-[8px] left-1/2 -translate-x-1/2", delay: 1.3 },
@@ -123,11 +125,11 @@ const Hero = () => {
               </motion.div>
             ))}
 
-            {/* Profile image */}
+            
             <motion.img
               src={assets.profileImg}
               alt='Tanya Prajapati'
-              className='relative z-10 w-[200px] h-[200px] rounded-full object-cover object-top'
+              className='relative z-10 w-[200px] h-[200px] rounded-full object-cover object-top '
               style={{ border: "2px solid rgba(124,58,237,0.6)" }}
              animate={{
   boxShadow: [
