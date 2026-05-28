@@ -146,14 +146,6 @@ const Contact = () => {
               onSubmit={handleSubmit}
               className='bg-[#0d1117] border border-blue-300/15 rounded-2xl overflow-hidden'
             >
-              
-              <div className='flex items-center gap-2 px-4 py-3 bg-[#161b22] border-b border-white/5'>
-                <span className='w-3 h-3 rounded-full bg-[#ff5f57]'></span>
-                <span className='w-3 h-3 rounded-full bg-[#febc2e]'></span>
-                <span className='w-3 h-3 rounded-full bg-[#28c840]'></span>
-                <span className='mx-auto text-[11px] text-slate-600 tracking-widest font-mono'>send_message.js</span>
-              </div>
-
               <div className='p-6 flex flex-col gap-5'>
 
                 

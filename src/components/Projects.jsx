@@ -250,7 +250,7 @@ const Projects = () => {
           transition={{ duration: 0.6, delay: 0.5 }}
           className='text-center text-xs text-slate-600 font-mono mt-8'
         >
-          // more projects coming soon • currently building in public
+           more projects coming soon • currently building in public
         </motion.p>
 
       </div>
